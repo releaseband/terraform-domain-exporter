@@ -3,23 +3,23 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.3.6 |
-| <a name="requirement_helm"></a> [helm](#requirement\_helm) | 2.8.0 |
-| <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | 2.16.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_helm"></a> [helm](#requirement\_helm) | >= 2.8 |
+| <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | >= 2.16 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_helm"></a> [helm](#provider\_helm) | 2.8.0 |
-| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | 2.16.1 |
+| <a name="provider_helm"></a> [helm](#provider\_helm) | >= 2.8 |
+| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | >= 2.16 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [helm_release.domain-exporter](https://registry.terraform.io/providers/hashicorp/helm/2.8.0/docs/resources/release) | resource |
-| [kubernetes_network_policy.domain-exporter](https://registry.terraform.io/providers/hashicorp/kubernetes/2.16.1/docs/resources/network_policy) | resource |
+| [helm_release.domain-exporter](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) | resource |
+| [kubernetes_network_policy.domain-exporter](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/network_policy) | resource |
 
 ## Inputs
 
