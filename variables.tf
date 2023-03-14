@@ -15,3 +15,9 @@ variable "image_tag" {
   default     = "v1.17.1"
   description = "domain exporter image tag"
 }
+
+variable "chart_version" {
+  type        = string
+  default     = "0.3.6"
+  description = "domain exporter chart version"
+}

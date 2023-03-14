@@ -25,6 +25,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_chart_version"></a> [chart\_version](#input\_chart\_version) | domain exporter chart version | `string` | `"0.3.6"` | no |
 | <a name="input_domain_list"></a> [domain\_list](#input\_domain\_list) | list of domains to monitoring ny domain exporter | `string` | `"google.com"` | no |
 | <a name="input_image_repository"></a> [image\_repository](#input\_image\_repository) | domain exporter image repository | `string` | `"caarlos0/domain_exporter"` | no |
 | <a name="input_image_tag"></a> [image\_tag](#input\_image\_tag) | domain exporter image tag | `string` | `"v1.17.1"` | no |

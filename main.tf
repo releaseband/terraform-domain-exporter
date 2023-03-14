@@ -3,7 +3,7 @@ resource "helm_release" "domain-exporter" {
   namespace   = "monitoring"
   repository  = "https://zifter.github.io/helm-charts/"
   timeout     = 240
-  version     = "0.3.4"
+  version     = var.chart_version
   chart       = "domain-exporter"
   max_history = 10
   values = [
