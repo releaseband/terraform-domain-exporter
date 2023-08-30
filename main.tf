@@ -27,7 +27,7 @@ resources:
     cpu: 100m
     memory: 128Mi
   requests:
-    cpu: 5m
+    cpu: 1m
     memory: 128Mi
 rules:
   enabled: false
