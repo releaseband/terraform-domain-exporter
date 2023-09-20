@@ -28,7 +28,7 @@ resources:
     memory: 128Mi
   requests:
     cpu: 1m
-    memory: 128Mi
+    memory: 30Mi
 rules:
   enabled: false
 dashboards:
