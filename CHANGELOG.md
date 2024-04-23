@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.3](https://github.com/releaseband/terraform-domain-exporter/compare/v2.1.2...v2.1.3) (2024-04-23)
+
+
+### Bug Fixes
+
+* update container resources ([b8022b1](https://github.com/releaseband/terraform-domain-exporter/commit/b8022b18d413a90a97da1c7891467275e36f0456))
+* update inputs ([cb70668](https://github.com/releaseband/terraform-domain-exporter/commit/cb70668aa6862c7ff263ebddd71cb1bc89601e74))
+
 ## [2.1.2](https://github.com/releaseband/terraform-domain-exporter/compare/v2.1.1...v2.1.2) (2023-09-20)
 
 
