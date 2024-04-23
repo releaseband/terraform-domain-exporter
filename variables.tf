@@ -21,3 +21,7 @@ variable "chart_version" {
   default     = "0.3.6"
   description = "domain exporter chart version"
 }
+variable "domain_exporter_resources" {
+  type        = map(any)
+  description = "monitoring domain-exporter continer resources"
+}
