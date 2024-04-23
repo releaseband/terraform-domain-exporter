@@ -1,7 +1,7 @@
 resource "helm_release" "domain-exporter" {
   name        = "domain-exporter"
   namespace   = "monitoring"
-  repository  = "https://zifter.github.io/helm-charts/"
+  repository  = "https://nexus.releaseband.com/repository/helm-proxy-domain-exporter"
   timeout     = 240
   version     = var.chart_version
   chart       = "domain-exporter"
@@ -22,13 +22,18 @@ securityContext:
   runAsNonRoot: true
   runAsUser: 1000
   allowPrivilegeEscalation: false
+podAnnotations:
+  "config.linkerd.io/proxy-cpu-request": "1m"
+  "config.linkerd.io/proxy-cpu-limit": "2m"
+  "config.linkerd.io/proxy-memory-request": "10Mi"
+  "config.linkerd.io/proxy-memory-limit": "20Mi"
 resources:
   limits:
-    cpu: 100m
-    memory: 128Mi
+    cpu: ${var.domain_exporter_resources.limits.cpu}
+    memory: ${var.domain_exporter_resources.limits.memory}
   requests:
-    cpu: 1m
-    memory: 30Mi
+    cpu: ${var.domain_exporter_resources.requests.cpu}
+    memory: ${var.domain_exporter_resources.requests.memory}
 rules:
   enabled: false
 dashboards:
